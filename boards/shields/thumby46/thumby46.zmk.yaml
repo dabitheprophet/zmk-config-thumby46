@@ -1,0 +1,11 @@
+file_format: "1"
+id: thumby46
+name: Thumby46
+type: shield
+url: https://github.com/dabitheprophet/zmk-config-thumby46
+requires: [nice_nano_v2]
+features:
+  - keys
+siblings:
+  - thumby46_left
+  - thumby46_right

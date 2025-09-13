@@ -1,0 +1,5 @@
+config SHIELD_THUMBY46_LEFT
+    def_bool $(shields_list_contains,thumby46_left)
+
+config SHIELD_THUMBY46_RIGHT
+    def_bool $(shields_list_contains,thumby46_right)
