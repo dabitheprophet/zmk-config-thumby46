@@ -60,7 +60,7 @@
         };
         behaviors {
             /* Left Shift: hold = LSHFT, single tap = no-op, double tap = CapsLock */
-            td_lshift_caps: tap_dance {
+            td_lshift_caps: td_lshift_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;      /* tweak 170–230ms to taste */
@@ -69,7 +69,7 @@
             };
 
             /* Right Shift: hold = RSHFT, single tap = no-op, double tap = CapsLock */
-            td_rshift_caps: tap_dance {
+            td_rshift_caps: td_rshift_caps {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -78,7 +78,7 @@
             };
             
             /* Left Alt: hold = LALT, tap = no-op, double tap = toggle Ctrl⇄Gui swap (both sides) */
-            td_lalt_swap: tap_dance {
+            td_lalt_swap: td_lalt_swap {
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
@@ -87,7 +87,7 @@
             };
 
             /* Right Alt: same, also toggles the same swap layer */
-            td_ralt_swap: tap_dance {
+            td_ralt_swap: td_ralt_swap {
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
