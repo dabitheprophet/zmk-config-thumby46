@@ -25,11 +25,11 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3)                                 RC(3,6) RC(3,7) 
         diode-direction = "col2row";
         wakeup-source;
     };
+
+    physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = &default_transform;
+    };
 };
 
-physical_layout0: physical_layout_0 { // First physical layout, use different naming for other layouts
-    compatible = "zmk,physical-layout";
-    display-name = "Default Layout";
-    //kscan = <&kscan0>; // Label of the kscan node, optional if all layouts use the same
-    transform = <&default_transform>; // Label of the matrix transform for this layout
-};
