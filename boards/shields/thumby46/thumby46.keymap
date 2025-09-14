@@ -23,6 +23,8 @@
 #define POS_LCTRL    38  /* row5 left: LCTRL(38) LOWER(39) TAB(40) ESC(41) */
 #define POS_RGUI     36
 #define POS_RCTRL    45
+#define POS_TAB      40  /* row5 left: ... TAB(40) ESC(41) */
+#define POS_SPACE    43  /* row5 right: RET(42) SPACE(43) LOWER(44) RCTRL(45) */
 
 #define COMBO_TIMEOUT 70
 
@@ -30,11 +32,18 @@
         combos {
             compatible = "zmk,combos";
 
-            // Both Shifts together → toggle Mouse layer 
-            combo_shift_mouse_toggle {
-            timeout-ms = <COMBO_TIMEOUT>;                         
-            key-positions = <POS_LSHIFT POS_RSHIFT>;
-            bindings = <&tog MOUSE>;
+            /* LShift + Tab → toggle Mouse */
+            combo_lshift_tab_mouse_toggle {
+                timeout-ms = <COMBO_TIMEOUT>;
+                key-positions = <POS_LSHIFT POS_TAB>;
+                bindings = <&tog MOUSE>;
+            };
+
+            /* RShift + Space → toggle Mouse */
+            combo_rshift_space_mouse_toggle {
+                timeout-ms = <COMBO_TIMEOUT>;
+                key-positions = <POS_RSHIFT POS_SPACE>;
+                bindings = <&tog MOUSE>;
             };
 
             // Right RAISE + Right LOWER together → toggle Numpad layer
