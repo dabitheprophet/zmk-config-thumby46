@@ -13,8 +13,7 @@
 #define LOWER         2
 #define RAISE         3
 #define FUNCTION      4
-#define MOUSE         5
-#define CTRL_GUI_SWAP 6
+#define CTRL_GUI_SWAP 5
 
 /* Key positions (0-indexed) derived from your default_layer bindings grid */
 #define POS_LSHIFT   33  /* row4 left:  LALT(30) LGUI(31) RAISE(32) LSHIFT(33) */
