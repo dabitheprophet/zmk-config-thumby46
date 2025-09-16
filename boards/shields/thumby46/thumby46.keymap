@@ -137,8 +137,8 @@
 // |     |CNTL | LOW | TAB | ESC |     | ENT | SPC | LOW |CNTL |     |
                         bindings = <  
    &kp Q          &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U            &kp I      &kp O       &kp P   
-   &kp A          &kp S      &kp D      &kp F      &kp G          &kp H      &kp J            &kp K      &kp L       &kp SEMI
-   &kp_hold_tap LSHFT Z          &kp X      &kp C      &kp V      &kp B          &kp N      &kp M            &kp COMMA  &kp DOT     &kp_hold_tap RSHFT FSLH
+   &kp_hold_tap LSHFT A          &kp S      &kp D      &kp F      &kp G          &kp H      &kp J            &kp K      &kp L       &kp_hold_tap RSHFT SEMI
+   &kp Z          &kp X      &kp C      &kp V      &kp B          &kp N      &kp M            &kp COMMA  &kp DOT     &kp FSLH
    &td_lalt_swap  &kp LGUI   &mo RAISE  &layer_hold_tap NUMPAD TAB                      &layer_hold_tap LOWER SPACE  &mo RAISE  &kp RGUI    &td_ralt_swap
                   &kp LCTRL  &mo LOWER  &kp CAPS    &kp ESC        &kp RET    &tog NUMPAD    &mo LOWER  &kp RCTRL
                         >;
