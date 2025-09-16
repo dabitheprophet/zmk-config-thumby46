@@ -107,7 +107,7 @@
             };
             layer_hold_tap: layer_hold_tap {
                 compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <0>;
+                #binding-cells = <2>;
 
                 flavor = "hold-preferred";   /* 👈 ensures "chording" = hold */
                 tapping-term-ms = <200>;
@@ -117,7 +117,7 @@
             /* Left Shift: hold = LSHFT, tap = Z */
             kp_hold_tap: kp_hold_tap {
                 compatible = "zmk,behavior-hold-tap";
-                #binding-cells = <0>;
+                #binding-cells = <2>;
 
                 flavor = "hold-preferred";
                 tapping-term-ms = <200>;        /* adjust to comfort */
