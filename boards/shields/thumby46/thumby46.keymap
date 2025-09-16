@@ -124,6 +124,16 @@
 
                 bindings = <&kp>, <&kp>;
             };
+            /* Left Shift: hold = LSHFT, tap = Z */
+            bt_clear: bt_clear {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+
+                flavor = "hold-preferred";
+                tapping-term-ms = <300>;        /* adjust to comfort */
+
+                bindings = <&bt>, <&none>;
+            };
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -139,8 +149,8 @@
    &kp Q          &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U            &kp I      &kp O       &kp P   
    &kp A          &kp S      &kp D      &kp F      &kp G          &kp H      &kp J            &kp K      &kp L       &kp SEMI
    &kp_hold_tap LSHFT Z          &kp X      &kp C      &kp V      &kp B          &kp N      &kp M            &kp COMMA  &kp DOT     &kp_hold_tap RSHFT FSLH
-   &td_lalt_swap  &kp LGUI   &mo RAISE  &layer_hold_tap LOWER TAB                      &layer_hold_tap LOWER SPACE  &mo RAISE  &kp RGUI    &td_ralt_swap
-                  &kp LCTRL  &mo LOWER  &layer_hold_tap NUMPAD CAPS    &kp ESC        &kp RET    &tog NUMPAD    &mo LOWER  &kp RCTRL
+   &td_lalt_swap  &kp LGUI   &mo RAISE  &layer_hold_tap NUMPAD TAB                      &layer_hold_tap LOWER SPACE  &mo RAISE  &kp RGUI    &td_ralt_swap
+                  &kp LCTRL  &mo LOWER  &kp CAPS    &kp ESC        &kp RET    &tog NUMPAD    &mo LOWER  &kp RCTRL
                         >;
                 };
 
@@ -168,7 +178,7 @@
 // |     |     |     |     |     |     |     |     |     |     |     |
 // |     |     |     |     |     |     |     |     |     |     |     |
                         bindings = <  
-   &bt BT_SEL 0  &bt BT_CLR  &kp C_BRI_DEC  &kp C_BRI_INC  &none         &mkp MB4        &mkp MB5      &kp UP    &kp HOME   &kp END   
+   &bt BT_SEL 0  &bt_clear BT_CLR NONE  &kp C_BRI_DEC  &kp C_BRI_INC  &none         &mkp MB4        &mkp MB5      &kp UP    &kp HOME   &kp END   
    &bt BT_SEL 1  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none         &kp PG_DN       &kp LEFT      &kp DOWN  &kp RIGHT  &kp PG_UP
    &bt BT_SEL 2  &kp C_PREV  &kp C_PP       &kp C_NEXT     &none         &msc MOVE_DOWN  &msc MOVE_UP  &kp BSPC  &kp DEL    &kp INS
    &trans        &trans      &trans         &trans                                       &trans        &trans    &trans     &trans
