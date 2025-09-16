@@ -178,7 +178,7 @@
 // |     |     |     |     |     |     |     |     |     |     |     |
 // |     |     |     |     |     |     |     |     |     |     |     |
                         bindings = <  
-   &bt BT_SEL 0  &bt_clear BT_CLR NONE  &kp C_BRI_DEC  &kp C_BRI_INC  &none         &mkp MB4        &mkp MB5      &kp UP    &kp HOME   &kp END   
+   &bt BT_SEL 0  &bt_clear BT_CLR 0  &kp C_BRI_DEC  &kp C_BRI_INC  &none         &mkp MB4        &mkp MB5      &kp UP    &kp HOME   &kp END   
    &bt BT_SEL 1  &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP   &none         &kp PG_DN       &kp LEFT      &kp DOWN  &kp RIGHT  &kp PG_UP
    &bt BT_SEL 2  &kp C_PREV  &kp C_PP       &kp C_NEXT     &none         &msc MOVE_DOWN  &msc MOVE_UP  &kp BSPC  &kp DEL    &kp INS
    &trans        &trans      &trans         &trans                                       &trans        &trans    &trans     &trans
