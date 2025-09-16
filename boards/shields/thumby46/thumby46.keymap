@@ -109,7 +109,7 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
 
-                flavor = "hold-preferred";   /* 👈 ensures "chording" = hold */
+                flavor = "tap-preferred";   
                 tapping-term-ms = <200>;
 
                 bindings = <&mo>, <&kp>;
@@ -119,8 +119,8 @@
                 compatible = "zmk,behavior-hold-tap";
                 #binding-cells = <2>;
 
-                flavor = "hold-preferred";
-                tapping-term-ms = <200>;        /* adjust to comfort */
+                flavor = "tap-preferred";
+                tapping-term-ms = <200>;       
 
                 bindings = <&kp>, <&kp>;
             };
